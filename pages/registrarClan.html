@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <title>Registrar tu Clan</title>
+</head>
+
+<body>
+    <main>
+        <div class="title">
+            <h1>CHILE<span> ARENA <span class="bluePrint">BREAKOUT</span></span></h1>
+        </div>
+        <div class="link-container">
+            <a href="index.html">INICIO</a>
+            <a href="">ENLACES</a>
+            <a href="/pages/news.html">NOTICIAS</a>
+            <a href="">GANADORES</a>
+            <div class="search-and-button">
+                <input type="text" placeholder="Buscar">
+                <button>LOGIN</button>
+            </div>
+        </div>
+        <h1>Bienvenido a la <em>Inscripcion de Clanes</em></h1>
+
+        <h2>Instrucciones</h2>
+
+        <p>
+            Ingresa tu nombre de clan exactamente como esta en el juego, si no sabes como
+            crear un clan, haz click en el enlace <a href="crearClan.html">Crear Clan</a>
+        </p>
+
+        <form action="registro-clan" method="post">
+            <label for="">Nombre del Clan</label>
+            <input type="text" name="nomClan" id="nomClan" placeholder="ingresa el nombre del clan">
+            <button type="submit">Aceptar</button>
+            <button type="reset">Editar</button>
+            <br>
+            <br>
+            <label for="descripcion">Descripcion</label>
+            <br>
+
+            <textarea type="text" name="desClan" id="desClan">
+            Deja aqui tu descripcion de clan
+        </textarea>
+            <br>
+            <button type="submit">Insertar Descripcion</button>
+
+            <br>
+            <br>
+
+            <label for="">Sube aca tu foto de perfil del clan</label>
+            <br>
+
+
+            <br>
+            <br>
+
+            <label for="">Seleciona el tipo de clan</label>
+            <select name="tipo de estrategia" id="tipoEstrategia">
+                <option value="">Comunicacion</option>
+                <option value="">Tactico</option>
+                <option value="">Rush</option>
+                <option value="">Sigilo</option>
+            </select>
+            <button type="submit">Insertar</button>
+
+
+
+            <br>
+            <br>
+
+            <label for="">Reglas de tu Clan</label>
+            <ol>
+                <li>
+                    <label for="regla1">
+                        regla numero 1
+                    </label>
+                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
+                    <button>Insertar</button>
+                    <button type="reset">Editar</button>
+                </li>
+                <li>
+                    <label for="regla1">
+                        regla numero 2
+                    </label>
+                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
+                    <button>Insertar</button>
+                    <button type="reset">Editar</button>
+                </li>
+                <li>
+                    <label for="regla1">
+                        regla numero 3
+                    </label>
+                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
+                    <button>Insertar</button>
+                    <button type="reset">Editar</button>
+                </li>
+                <li>
+                    <label for="regla1">
+                        regla numero 4
+                    </label>
+                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
+                    <button>Insertar</button>
+                    <button type="reset">Editar</button>
+                </li>
+                <li>
+                    <label for="regla1">
+                        regla numero 5
+                    </label>
+                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
+                    <button>Insertar</button>
+                    <button type="reset">Editar</button>
+                </li>
+                <li>
+                    <label for="regla1">
+                        regla numero 6
+                    </label>
+                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
+                    <button>Insertar</button>
+                    <button type="reset">Editar</button>
+                </li>
+            </ol>
+            <h3>Revisa todos los datos antes de clickexar <em>REGISTRAR CLAN</em></h3>
+            <button type="submit">Registrar Clan</button>
+        </form>
+    </main>
+</body>
+
+</html>

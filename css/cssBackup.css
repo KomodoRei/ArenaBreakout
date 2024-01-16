@@ -1,0 +1,78 @@
+.menu-container{
+    background-color: rgba(255, 255, 255, 0.719);
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+h2{
+    display: block;
+    text-transform: uppercase;
+    color: white;
+    background-color: #566961;
+    text-align: center;
+}
+
+
+.menu-container{
+    background-color: #566961;
+    height: 4em;
+}
+
+.menu{
+    display: flex;
+}
+
+.boxMenu{
+    margin: 1em 1em 2em 2em; 
+    flex-wrap: wrap;
+    height: 8em;
+    width: 8em;
+}
+
+.img-menu{
+    flex-direction: row;
+    width: 3em;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    flex-direction: column;
+    color: white
+}
+
+.card-container{
+    display: grid;
+    grid-template-rows: repeat(2, 120px) ;
+    grid-template-columns: 1fr;
+    justify-content: left;
+}
+
+
+.card-reg{
+
+}
+
+.card-thnks{
+    height: 300px;
+    width: 300px;
+    display: flexbox;
+    flex-direction: row;
+}
+
+
+.card-obj{
+    height: 300px;
+    width: 300px;
+    display: flexbox;
+    flex-direction: row;
+}
+
+.card-link {
+    display: flexbox;
+    flex-direction: row;
+}
