@@ -409,5 +409,23 @@ al grid*/
     align-items: center;
 }
 
+.nav-element{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listaElement li{
+    display: inline;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.listaElement li a{
+    display: inline;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: black;
+}
+
 
 
