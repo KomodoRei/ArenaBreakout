@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/estilos.css">
     <title>Registrar tu Clan</title>
 </head>
@@ -43,106 +43,66 @@
         </div>
     </nav>
     <main>
-        <h1>Bienvenido a la <em>Inscripcion de Clanes</em></h1>
-        <h2>Instrucciones</h2>
-        <p>
-            Ingresa tu nombre de clan exactamente como esta en el juego, si no sabes como
-            crear un clan, haz click en el enlace <a href="crearClan.html">Crear Clan</a>
-        </p>
-        <form action="registro-clan" method="post">
-            <label for="">Nombre del Clan</label>
-            <input type="text" name="nomClan" id="nomClan" placeholder="ingresa el nombre del clan">
-            <button type="submit">Aceptar</button>
-            <button type="reset">Editar</button>
-            <br>
-            <br>
-            <label for="descripcion">Descripcion</label>
-            <br>
-
-            <textarea type="text" name="desClan" id="desClan">
-            Deja aqui tu descripcion de clan
-        </textarea>
-            <br>
-            <button type="submit">Insertar Descripcion</button>
-
-            <br>
-            <br>
-
-            <label for="">Sube aca tu foto de perfil del clan</label>
-            <br>
-
-
-            <br>
-            <br>
-
-            <label for="">Seleciona el tipo de clan</label>
-            <select name="tipo de estrategia" id="tipoEstrategia">
-                <option value="">Comunicacion</option>
-                <option value="">Tactico</option>
-                <option value="">Rush</option>
-                <option value="">Sigilo</option>
-            </select>
-            <button type="submit">Insertar</button>
-
-
-
-            <br>
-            <br>
-
-            <label for="">Reglas de tu Clan</label>
-            <ol>
-                <li>
-                    <label for="regla1">
-                        regla numero 1
-                    </label>
-                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
-                    <button>Insertar</button>
-                    <button type="reset">Editar</button>
-                </li>
-                <li>
-                    <label for="regla1">
-                        regla numero 2
-                    </label>
-                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
-                    <button>Insertar</button>
-                    <button type="reset">Editar</button>
-                </li>
-                <li>
-                    <label for="regla1">
-                        regla numero 3
-                    </label>
-                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
-                    <button>Insertar</button>
-                    <button type="reset">Editar</button>
-                </li>
-                <li>
-                    <label for="regla1">
-                        regla numero 4
-                    </label>
-                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
-                    <button>Insertar</button>
-                    <button type="reset">Editar</button>
-                </li>
-                <li>
-                    <label for="regla1">
-                        regla numero 5
-                    </label>
-                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
-                    <button>Insertar</button>
-                    <button type="reset">Editar</button>
-                </li>
-                <li>
-                    <label for="regla1">
-                        regla numero 6
-                    </label>
-                    <input type="text" name="regla1" id="regla1"> <!--necesito agregar columnas o que sea mas ancho-->
-                    <button>Insertar</button>
-                    <button type="reset">Editar</button>
-                </li>
-            </ol>
-            <h3>Revisa todos los datos antes de clickexar <em>REGISTRAR CLAN</em></h3>
-            <button type="submit">Registrar Clan</button>
-        </form>
+        <section class="flex-conteiner-welcome">
+            <h1>Bienvenido a la <em>Inscripcion de Clanes</em></h1>
+        </section>
+        <section class="flex-conteiner-form">
+            <div class="flex-item-form-adj">
+                <!-- insertar cuadro para foto de perfil -->
+                <label for="Logo del Clan">Escudo del clan</label>
+                <button>Adjuntar</button>
+                <!-- insertar cuadro para banner de perfil -->
+                <label for="banner de clan">Banner de clan</label>
+                <button>Adjuntar</button>
+            </div>
+            <div class="flex-item-form">
+                <h2>Instrucciones</h2>
+                <p>
+                    Ingresa tu nombre de clan exactamente como esta en el juego, si no sabes como
+                    crear un clan, haz click en el enlace <a href="crearClan.html">Crear Clan</a>
+                </p>
+            </div>
+            <div class="flex-item-form">
+                <label for="nameClan">Ingresa nombre del clan</label>
+                <input type="text" name="nomClan" id="nomClan" placeholder="ingresa el nombre del clan">
+                <label for="typeClan">Selecciona tipo de clan</label>
+                <label for="Comunicacion">Comunicacion</label>
+                <input type="checkbox" class="checkBoxClass">
+                <label for="Sigilo">Sigilo</label>
+                <input type="checkbox" class="checkBoxClass">
+                <label for="Tactico">Tactico</label>
+                <input type="checkbox" class="checkBoxClass">
+                <label for="Rush">Rush</label>
+                <input type="checkbox" class="checkBoxClass">
+                <label for="novatos">Novatos</label>
+                <input type="checkbox" class="checkBoxClass">
+                <label for="camper">Campero</label>
+                <input type="checkbox" class="checkBoxClass">
+                <label for="descripcion">Descripcion</label>
+                <textarea name="descClan" id="descClan" cols="30" rows="5"></textarea>
+            </div>
+            <div class="flex-item-form">
+                <label for="descripcion">Reglas de tu clan</label>
+                <p>Esta seccion es util para que puedas definir el tipo de comportamiento que deseas en el clan.</p>
+                <p>Mira los sigiuentes ejemplos</p>
+                <label for="regla1">Regla 1</label>
+                <input type="text" name="" id=""  placeholder="Microfono activado">
+                <label for="regla2">Regla 2</label>
+                <input type="text" name="" id="" placeholder="Unirse a discord">
+                <label for="regla3">Regla 3</label>
+                <input type="text" name="" id="" placeholder="Jugador activo">
+                <label for="regla4">Regla 4</label>
+                <input type="text" name="" id="" placeholder="Respetar loot">
+                <label for="regla5">Regla 5</label>
+                <input type="text" name="" id="" placeholder="Prioridad al clan">
+                <label for="regla6">Regla 6</label>
+                <input type="text" name="" id="" placeholder="Practicar diario">
+            </div>
+            <div class="flex-item-aviso">
+                <h3>Revisa todos los datos antes de clickexar <em>REGISTRAR CLAN</em></h3>
+                <button type="submit">Registrar Clan</button>
+            </div>
+        </section>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

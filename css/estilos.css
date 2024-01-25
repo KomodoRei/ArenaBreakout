@@ -357,3 +357,57 @@ al grid*/
     background-image: radial-gradient( rgb(27, 134, 228), black);
     box-shadow: 0px 0px 25px 1px rgb(27, 134, 228);
 }
+
+/* registrar clan */
+.flex-conteiner-welcome{
+    background-color: white;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 20px ;
+    padding-bottom: 20px;
+}
+
+.flex-conteiner-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.flex-conteiner-form{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    justify-content: center;
+}
+
+.flex-item-form-adj{
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.flex-item-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: lightblue;
+    margin: 10px 20px 10px 20px;
+    padding: 10px 20px 10px 20px;
+}
+
+.flex-item-aviso{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
