@@ -1,0 +1,59 @@
+/* regla de media query */
+/* para iOS */
+/* iPhone X, Xs, 11 Pro, 12 Mini, 13 Mini */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    /* Tus estilos aquí */
+}
+
+/* iPhone Xr, 11, 11 Pro Max, 12, 12 Pro, 12 Pro Max, 13, 13 Pro, 13 Pro Max */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 896px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    /* Tus estilos aquí */
+}
+
+/* iPhone 14, 14 Pro, 14 Pro Max, 15, 15 Pro, 15 Pro Max */
+@media only screen 
+  and (min-device-width: 428px) 
+  and (max-device-width: 926px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    /* Tus estilos aquí */
+}
+
+/* Tablets */
+/* iPad Mini, Air, Pro (9.7-inch), and 3rd/4th Gen */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    /* Tus estilos aquí */
+}
+
+/* iPad Pro (10.5-inch) */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    /* Tus estilos aquí */
+}
+
+/* iPad Pro (11-inch) and iPad Air (4th generation) */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1194px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    /* Tus estilos aquí */
+}
+
+/* iPad Pro (12.9-inch) */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    /* Tus estilos aquí */
+}
+
