@@ -390,8 +390,9 @@ al grid*/
 }
 
 .flex-item-form-adj {
-    display: relative;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) ;
+    grid-template-columns: repeat(2, 2fr) ;
     flex-direction: column;
     background-color: black;
     color: black;
@@ -403,7 +404,7 @@ al grid*/
 }
 
 .banner {
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 100%;
     height: 20em;
@@ -411,7 +412,7 @@ al grid*/
 }
 
 .perfil {
-    display: flex;
+    display: block;
     flex-direction: column;
     width: 45%;
     border-radius: 100%;
