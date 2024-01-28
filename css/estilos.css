@@ -378,23 +378,16 @@ al grid*/
 .flex-conteiner-form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-.flex-conteiner-form {
-    display: flex;
-    flex-wrap: wrap;
     background-color: aliceblue;
     justify-content: center;
 }
 
 .flex-item-form-adj {
     display: grid;
-    grid-template-rows: repeat(4, 1fr) ;
-    grid-template-columns: repeat(2, 2fr) ;
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-template-columns: 40px , 1fr ;
     flex-direction: column;
-    background-color: black;
+    background-color: whitesmoke;
     color: black;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -403,16 +396,25 @@ al grid*/
     margin-bottom: 5em;
 }
 
+
+
+.adjuntar-img{
+    display: inline-block;
+    height: 1em;
+    width: 10em;
+    color: white;
+    background-color: blueviolet;
+}
+
 .banner {
-    display: block;
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 20em;
-    position: inherit;
 }
 
 .perfil {
-    display: block;
+    display: flex;
     flex-direction: column;
     width: 45%;
     border-radius: 100%;
@@ -421,6 +423,7 @@ al grid*/
     left: 50%;
     transform: translate(-50%, -180%);
 }
+
 
 .flex-item-form {
     display: flex;
