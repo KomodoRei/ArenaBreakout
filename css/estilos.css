@@ -398,12 +398,17 @@ al grid*/
 
 
 
-.adjuntar-img{
-    display: inline-block;
+.BtnAdjuntarImg{
+    display: inline;
     height: 1em;
     width: 10em;
     color: white;
     background-color: blueviolet;
+}
+
+.LblLogoClan{
+    display: inline;
+    background-color: aqua;
 }
 
 .banner {
