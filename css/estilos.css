@@ -393,32 +393,33 @@ al grid*/
     padding-bottom: 10px;
     width: 100%;
     height: 20em;
-    margin-bottom: 5em;
+    margin-bottom: 1em;
 }
 
+.flex-conteiner-adjuntar-banner{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+}
 
+.flex-conteiner-adjuntar-escudo{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+}
 
 .BtnAdjuntarImg{
-    display: inline;
-    height: 1em;
-    width: 10em;
-    color: white;
-    background-color: blueviolet;
+    margin: 0 2em 0 2em;
 }
 
-.LblLogoClan{
-    display: inline;
-    background-color: aqua;
-}
-
-.banner {
+.bannerImg {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 20em;
 }
 
-.perfil {
+.escudoImg {
     display: flex;
     flex-direction: column;
     width: 45%;
