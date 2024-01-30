@@ -373,6 +373,7 @@ al grid*/
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .flex-conteiner-form {
@@ -383,29 +384,30 @@ al grid*/
 }
 
 .flex-item-form-adj {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr) ;
-    grid-template-columns: 40px , 1fr ;
+    display: flex;
     flex-direction: column;
     background-color: whitesmoke;
     color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
     width: 100%;
     height: 20em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
+    margin-top: 0em;
 }
 
 .flex-conteiner-adjuntar-banner{
     display: flex;
     flex-wrap: wrap;
     background-color: lightblue;
+    width: 50%;
+    justify-content: center;
 }
 
 .flex-conteiner-adjuntar-escudo{
     display: flex;
     flex-wrap: wrap;
     background-color: lightblue;
+    width: 50%;
+    justify-content: center;
 }
 
 .BtnAdjuntarImg{
@@ -417,6 +419,7 @@ al grid*/
     flex-direction: column;
     width: 100%;
     height: 20em;
+    margin-top: 0;
 }
 
 .escudoImg {
@@ -427,7 +430,7 @@ al grid*/
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -180%);
+    transform: translate(-50%, -210%);
 }
 
 
