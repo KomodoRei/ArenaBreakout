@@ -142,6 +142,13 @@ al grid*/
     box-shadow: 0px 0px 30px 12px rgb(27, 134, 228);
 }
 
+.first-card-container p{
+    color: aliceblue;
+    margin: 1em 2em 1em 2em;
+    align-items: start;
+    text-align: left;
+}
+
 
 .card-txt-s:hover {
     text-align: center;
