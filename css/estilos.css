@@ -448,8 +448,12 @@ al grid*/
     justify-content: center;
     align-items: left;
     background-color: lightblue;
-    margin: 10px 20px 10px 20px;
-    padding: 10px 20px 10px 20px;
+    margin: 30px 30px 30px 30px;
+    padding: 30px 30px 30px 30px;
+    border-radius: 35px;
+    box-shadow: -13px 15px 23px -4px rgba(0,0,0,0.97);
+    -webkit-box-shadow: -13px 15px 23px -4px rgba(0,0,0,0.97);
+    -moz-box-shadow: -13px 15px 23px -4px rgba(0,0,0,0.97);
 }
 
 .flex-item-aviso {
@@ -483,4 +487,37 @@ footer{
     color: white;
     width: 100%;
     height: 20px;
+}
+
+.title-guia{
+    text-align: center;
+    align-items: center;
+    /* background-color: black; */
+    color: black;
+}
+
+.sub-title{
+    text-align: center;
+    align-items: center;
+    color: red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration:underline;
+}
+
+.atte-look{
+    color: red;
+    text-decoration: underline;
+}
+
+.question-look{
+    text-align: center;
+    align-items: center;
+    color: red;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration:underline;
+}
+
+.option-conteiner{
+    text-align: center;
+    justify-content: center;
 }
