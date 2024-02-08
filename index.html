@@ -17,9 +17,8 @@
             <h1>CHILE<span> ARENA <span class="bluePrint">BREAKOUT</span></span></h1>
         </div>
     </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand animate__animated animate__fadeInUp" href="#">REGISTRAR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -27,132 +26,109 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow" aria-current="page" href="index.html">INICIO</a>
+                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow"
+                            aria-current="page" href="index.html">INICIO</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active" href="pages/news.html">NOTICIAS</a></li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active" href="pages/crearClan.html">CREAR CLAN</a></li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active" href="pages/registrarClan.html">REGISTRAR CLAN</a>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="pages/news.html">NOTICIAS</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="pages/crearClan.html">CREAR CLAN</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="pages/registrarClan.html">REGISTRAR CLAN</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active" href="pages/guiaPage.html">GUIA DEL JUGADOR</a></li>
-                    <li class="nav-item"><a class="nav-link disabled" aria-disabled="true">LOGIN</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="pages/guiaPage.html">GUIA DEL JUGADOR</a></li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+                    <button class="btn btn-primary" type="submit">BUSCAR</button>
+                    <button class="btn btn-success" type="submit">LOGIN</button>
+                    <button class="btn btn-success" type="submit">REGISTRARSE</button>
                 </form>
             </div>
         </div>
     </nav>
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+        <section>
+            <div class="card text-center text-white bg-dark">
+                <div class="card-header text-bg-dark">
+                    <ul class="nav nav-pills card-header-pills">
+                        <li class="nav-item">
+                            <a class="btn btn-danger" href="#">Mejor Clip</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn text-secondary" href="pages/news.html">Nuevo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn text-secondary" href="#">Ganadores</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card-body">
+                    <iframe width="100%" height="490" src="https://www.youtube.com/embed/5EYBtpJCovY?si=ngHPBa8A_zO6RZrZ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                    <h5 class="card-title">El mejor jugador de la semana</h5>
+                    <p class="card-text">Compartiendo el mejor clip de la semana</p>
+                    <a href="#" class="btn btn-danger">Canal de Youtube</a>
+                </div>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="img/soldier-arena2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/soldier-arena.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="img/soldier-arena1.jpg" class="d-block w-100" alt="...">
-                </div>
+        </section>
+        <div class="container">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Ganadores</h5>
+                <p class="card-text">
+                    Revisa aqui los ganadores de la semana
+                </p>
+                <a href="#" class="btn btn-primary">¡VAMOS!</a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
         </div>
-        <section class="first-card-container">
-            <div class="card-txt-xxl">
-                <div class="card-small-img">
-                    <img src="img/shield-up-svgrepo-com.svg" alt="icono de escudi referente a clanes">
+        </div>
+        <div class="container"></div>
+        <div class="card" style="width: 100%;">
+            <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Eventos</h5>
+                <p class="card-text">CONCURSOS, EVENTOS y PREMIOS.</p>
+                <a href="#" class="btn btn-primary">¡VAMOS!</a>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+        <div class="card" style="width: 100%;">
+            <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Clanes</h5>
+                <p class="card-text">¡Clanes Chilenos!</p>
+                <a href="#" class="btn btn-primary">¡VAMOS!</a>
+            </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="card" style="width: 100%;">
+                <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Enlaces</h5>
+                    <p class="card-text">
+                        Encuentra Todo Nuestro Contenido Hecho Con Carino Para Ti!
+                    <ul style="text-align:start;">
+                        <li>clanes y requisitos <a href="pages/clanes.html">(inscribe tu clan aqui)</a></li>
+                        <li>Configuracion de Botones</li>
+                        <li>Ideas para integrar en el juego</li>
+                        <li>Consejo de mejora</li>
+                        <li>Conoce tu tipo de jugador</li>
+                        <li>Tienda</li>
+                        <li>Actualizaciones</li>
+                        <li>Noticias</li>
+                    </ul>
+                    </p>
+                    <a href="#" class="btn btn-primary">¡VAMOS!</a>
                 </div>
-                <h2>Registrar Clan</h2>
-                <p>
-                    Tu CLAN merece visibilidad, por eso creamos este espacio para ti.
-                    Muestranos tu talento por Youtube, Twitch, Instagram.
-                </p>
-                <a href="pages/registrarClan.html" class="btn-mas-xxl">¡VAMOS!</a>
             </div>
-            <div class="card-img-xxl">
-                <img src="img/soldier-arena2.jpg" alt="imagen de soldado de arena breakout">
-            </div>
-        </section>
-        <section class="first-card-container">
-            <div class="card-txt-xxl">
-                <div class="card-small-img">
-                    <img src="img/calendar-tick-svgrepo-com.svg" alt="imagen referente a calendario">
-                </div>
-                <h2>Eventos</h2>
-                <p>
-                    CONCURSOS, EVENTOS y PREMIOS.
-                </p>
-                <button class="btn-mas-xxl">¡VAMOS!</button>
-            </div>
-            <div class="card-img-xxl">
-                <img src="img/soldier-arena.jpg" alt="imagen de soldado de arenabreak out extrayendo">
-                <!-- <button class="btn-mas-xxl">¡VAMOS!</button> -->
-            </div>
-        </section>
-
-        <section class="first-card-container">
-            <div class="card-txt-xxl">
-                <div class="card-small-img">
-                    <img src="img/gaming-controller-gamepad-joystick-game-console-svgrepo-com.svg"
-                        alt="imagen de control de videojuegos">
-                </div>
-                <h2>Clanes</h2>
-                <p>
-                    ¡Clanes Chilenos!
-                </p>
-                <button class="btn-mas-xxl">¡VAMOS!</button>
-            </div>
-            <div class="card-img-xxl">
-                <img src="img/soldier-arena1.jpg" alt="imagen de soldado de arena breakout">
-                <!-- <button class="btn-mas-xxl">¡VAMOS!</button> -->
-            </div>
-        </section>
-
-        <section class="first-card-container">
-            <div class="card-txt-xxl">
-                <div class="card-small-img">
-                    <img src="img/flash-circle-1-svgrepo-com.svg" alt="imagen de un rayo referente a enlaces">
-                </div>
-                <h2>Enlaces</h2>
-                <p>
-                    Encuentra Todo Nuestro Contenido Hecho Con Carino Para Ti!
-                <ul style="text-align:start;">
-                    <li>clanes y requisitos <a href="pages/clanes.html">(inscribe tu clan aqui)</a></li>
-                    <li>Configuracion de Botones</li>
-                    <li>Ideas para integrar en el juego</li>
-                    <li>Consejo de mejora</li>
-                    <li>Conoce tu tipo de jugador</li>
-                    <li>Tienda</li>
-                    <li>Actualizaciones</li>
-                    <li>Noticias</li>
-                </ul>
-
-                </p>
-                <button class="btn-mas-xxl">¡VAMOS!</button>
-            </div>
-            <div class="card-img-xxl">
-                <img src="img/soldier-arena.jpg" alt="imagen de solado de arena breakout arma">
-                <!-- <button class="btn-mas-xxl">¡VAMOS!</button> -->
-            </div>
-        </section>
+        </div>
     </main>
     <footer>
         <p>©Copyright 2023 de lofi desing. Todos los derechos controvertidos.</p>
