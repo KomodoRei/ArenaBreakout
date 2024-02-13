@@ -7,23 +7,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
     <title>@CHLArenaBreakout</title>
 </head>
 
 <body>
     <header>
         <div class="title">
-            <h1>CHILE<span> ARENA <span class="bluePrint">BREAKOUT</span></span></h1>
+            <h1>CHILE<span class="title-print-a"> ARENA</span><span class="title-print-b">BREAKOUT</span></h1>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark"> 
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="d-flex flex-row-reverse">
+                <button class="btn btn-outline-success me-0" type="submit">LOGIN</button>
+                <button class="btn btn-outline-danger ms-0" type="submit">REGISTRARSE</button>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow"
@@ -37,13 +41,14 @@
                             href="pages/registrarClan.html">REGISTRAR CLAN</a>
                     </li>
                     <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                        href="pages/registrarClan.html">REGISTRAR JUGADOR</a>
+                </li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
                             href="pages/guiaPage.html">GUIA DEL JUGADOR</a></li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-primary" type="submit">BUSCAR</button>
-                    <button class="btn btn-success" type="submit">LOGIN</button>
-                    <button class="btn btn-success" type="submit">REGISTRARSE</button>
                 </form>
             </div>
         </div>
@@ -57,10 +62,16 @@
                             <a class="btn btn-danger" href="#">Mejor Clip</a>
                         </li>
                         <li class="nav-item">
-                            <a class="btn text-secondary" href="pages/news.html">Nuevo</a>
+                            <a class="btn text-secondary" href="#">Canales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn text-secondary" href="#">Clanes</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn text-secondary" href="#">Ganadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn text-secondary" href="#">Tienda</a>
                         </li>
                     </ul>
                 </div>
@@ -75,27 +86,50 @@
                 </div>
             </div>
         </section>
-        <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Ganadores</h5>
-                <p class="card-text">
-                    Revisa aqui los ganadores de la semana
-                </p>
-                <a href="#" class="btn btn-primary">¡VAMOS!</a>
+        <div class="conteiner-lg">
+            <div class="row">
+                <h2 class="card-header text-center bg-body-tertiary">ByxRabbit</h2>
+                <div class="col-12 bg-secondary">
+                    <img src="img/soldier-arena.jpg" alt="foto banner jugador" class="col-12 p-0 m-0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 bg-dark-subtle">
+                    <img src="img/soldier-arena2.jpg" alt="foto perfil jugador" class="col-12 m-1 p-0">
+                    <img src="img/soldier-arena2.jpg" alt="foto perfil jugador" class="col-12 m-1 p-0">
+                </div>
+                <div class="col-6 bg-danger-subtle p-1 m-0">
+                    <ul>
+                        <li>Player: ByxRabbit</li>
+                        <li>Pais: Chile</li>
+                        <li>Clan: TactiCAL.50</li>
+                        <li>Canal de YouTube: <a href="http://www.youtube.com">ByxRabbitTV</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col-12 bg-danger">
+                    <img src="img/soldier-arena1.jpg" alt="foto banner clan" class="col-12">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 bg-body-tertiary">
+                    img clan
+                </div>
+                <div class="col-8 bg-danger-subtle">
+                    info clan
+                </div>
+            </div>      
         </div>
-        <div class="container"></div>
-        <div class="card" style="width: 100%;">
+        <div class="card m-1" style="width: 100%;">
             <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Eventos</h5>
                 <p class="card-text">CONCURSOS, EVENTOS y PREMIOS.</p>
                 <a href="#" class="btn btn-primary">¡VAMOS!</a>
             </div>
-        </div>
         </div>
         <div class="container">
         <div class="card" style="width: 100%;">
@@ -131,11 +165,11 @@
         </div>
     </main>
     <footer>
-        <p>©Copyright 2023 de lofi desing. Todos los derechos controvertidos.</p>
+        <p class="bg-primary">©Copyright 2023 de lofi desing. Todos los derechos controvertidos.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
 </body>
 
 </html>

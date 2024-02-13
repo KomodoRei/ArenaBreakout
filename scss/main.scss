@@ -1,12 +1,132 @@
-@include media-breakpoint-up(xs) { ... }
-@include media-breakpoint-up(sm) { ... }
-@include media-breakpoint-up(md) { ... }
-@include media-breakpoint-up(lg) { ... }
-@include media-breakpoint-up(xl) { ... }
+// @include media-breakpoint-up(xs) { ... }
+// @include media-breakpoint-up(sm) { ... }
+// @include media-breakpoint-up(md) { ... }
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
 
-// Example usage:
-@include media-breakpoint-up(sm) {
-  .some-class {
-    display: block;
+// // Example usage:
+// @include media-breakpoint-up(sm) {
+//   .some-class {
+//     display: block;
+//   }
+// }
+
+
+// imports
+@import "modules/colors";
+@import "partials/grids";
+
+// modificando variables bootstrap de colores
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+
+}
+
+main {
+  /* background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );  */
+  background-image: $blue-main-radial-gradient;
+}
+
+
+.title {
+  display: grid;
+  background-image: radial-gradient(circle 976px at 51.2% 51%, rgba(11, 27, 103, 1) 0%, rgba(16, 66, 157, 1) 0%, rgba(11, 27, 103, 1) 17.3%, rgba(11, 27, 103, 1) 58.8%, rgba(11, 27, 103, 1) 71.4%, rgba(16, 66, 157, 1) 100.2%, rgba(187, 187, 187, 1) 100.2%);
+  text-align: center;
+  align-items: center;
+  margin-bottom: 0px;
+  height: 5em;
+
+  h1 {
+    font-size: 20px;
+    color: $red-youtube;
   }
+
+  .title-print-a {
+    color: white;
+    font-size: 20px;
+    justify-content: left;
+    margin-right: 5px;
+  }
+
+  .title-print-b {
+    background-color: $petroleo-breakout;
+    border-radius: 20px 0px;
+    color: whitesmoke;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+}
+
+.first-card-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(1, 1fr);
+  margin: 5%;
+  background-image: radial-gradient(black, rgb(27, 134, 228));
+  border: 2px solid black;
+  border-radius: 10px 10px;
+  box-shadow: 0px 0px 25px 1px rgb(27, 134, 228);
+
+  &:hover {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(1, 1fr);
+    margin: 5%;
+    background-image: radial-gradient(black, rgb(27, 134, 228));
+    border: 2px solid black;
+    border-radius: 10px 10px;
+    box-shadow: 0px 0px 30px 12px rgb(27, 134, 228);
+  }
+
+  p {
+    color: aliceblue;
+    margin: 1em 2em 1em 2em;
+    align-items: start;
+    text-align: left;
+  }
+
+}
+
+footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 20px;
+}
+
+.title-guia {
+  text-align: center;
+  align-items: center;
+  /* background-color: black; */
+  color: black;
+}
+
+.sub-title {
+  text-align: center;
+  align-items: center;
+  color: red;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+.atte-look {
+  color: red;
+  text-decoration: underline;
+}
+
+.question-look {
+  text-align: center;
+  align-items: center;
+  color: red;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+
+.option-conteiner {
+  text-align: center;
+  justify-content: center;
 }
