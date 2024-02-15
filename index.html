@@ -17,7 +17,7 @@
             <h1>CHILE<span class="title-print-a"> ARENA</span><span class="title-print-b">BREAKOUT</span></h1>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-dark bg-dark"> 
+    <nav class="navbar sticky-top navbar-dark bg-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -25,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-row-reverse">
-                <button class="btn btn-outline-success me-0" type="submit">LOGIN</button>
+                <a class="btn btn-outline-success me-0 ms-2" type="submit" href="pages/loginJugador.html">LOGIN</a>
                 <a class="btn btn-outline-danger ms-0" type="link" href="pages/registroJugador.html">REGISTRARSE</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,8 +41,8 @@
                             href="pages/registrarClan.html">REGISTRAR CLAN</a>
                     </li>
                     <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
-                        href="pages/registrarClan.html">REGISTRAR JUGADOR</a>
-                </li>
+                            href="pages/registrarClan.html">REGISTRAR JUGADOR</a>
+                    </li>
                     <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
                             href="pages/guiaPage.html">GUIA DEL JUGADOR</a></li>
                 </ul>
@@ -76,8 +76,9 @@
                     </ul>
                 </div>
                 <div class="card-body">
-                    <iframe width="100%" height="490" src="https://www.youtube.com/embed/5EYBtpJCovY?si=ngHPBa8A_zO6RZrZ"
-                        title="YouTube video player" frameborder="0"
+                    <iframe width="100%" height="490"
+                        src="https://www.youtube.com/embed/5EYBtpJCovY?si=ngHPBa8A_zO6RZrZ" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                     <h5 class="card-title">El mejor jugador de la semana</h5>
@@ -89,58 +90,82 @@
         <div class="profile-player">
             <div class="row">
                 <div class="cover-photo col-12">
-                    <img src="img/soldier-arena.jpg" alt="banner" class="col-12">
+                    <img src="img/soldier-arena2.jpg" alt="banner" class="col-12">
                 </div>
             </div>
             <div class="profile-photo">
                 <img src="img/soldier-arena.jpg" alt="Foto de perfil">
             </div>
-            <div class="row">
-                <div class="cover-photo-2 col-12">
-                    <img src="img/soldier-arena.jpg" alt="banner" class="col-12">
-                </div>
-            </div>
             <h1>ByxRabbit</h1>
             <p>Jugador del Mes</p>
         </div>
-        <h2 class="card-header text-center bg-body-tertiary">Informacion</h2>
-        <div class="card m-1" style="width: 100%;">
-            <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Eventos</h5>
-                <p class="card-text">CONCURSOS, EVENTOS y PREMIOS.</p>
-                <a href="#" class="btn btn-primary">¡VAMOS!</a>
+        <h2 class="card-header text-center cartas-color">Informacion del Jugador</h2>
+        <div class="accordion accordion-flush p-3" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h-color-txt-bg" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        El Jugador ByxRabbit
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <p>
+                                Youtuber desde los 14 anos, vivo en bogota, es un fanatico de todos los
+                                videos juegos de fps, como call
+                                of duty, battlefield, valorant, entre otros, soy de los que anda por el mapa muy tactico y
+                                rushero
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container">
-        <div class="card" style="width: 100%;">
-            <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Clanes</h5>
-                <p class="card-text">¡Clanes Chilenos!</p>
-                <a href="#" class="btn btn-primary">¡VAMOS!</a>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h-color-txt-bg" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Pais
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Chile</div>
+                </div>
             </div>
-        </div>
-        </div>
-        <div class="container">
-            <div class="card" style="width: 100%;">
-                <img class="card-img-top" src="img/soldier-arena.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Enlaces</h5>
-                    <p class="card-text">
-                        Encuentra Todo Nuestro Contenido Hecho Con Carino Para Ti!
-                    <ul style="text-align:start;">
-                        <li>clanes y requisitos <a href="pages/clanes.html">(inscribe tu clan aqui)</a></li>
-                        <li>Configuracion de Botones</li>
-                        <li>Ideas para integrar en el juego</li>
-                        <li>Consejo de mejora</li>
-                        <li>Conoce tu tipo de jugador</li>
-                        <li>Tienda</li>
-                        <li>Actualizaciones</li>
-                        <li>Noticias</li>
-                    </ul>
-                    </p>
-                    <a href="#" class="btn btn-primary">¡VAMOS!</a>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h-color-txt-bg" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Descripcion
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Tactico, rushero, busca del oro, agresivo, granadero, fusilero.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed h-color-txt-bg" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Clan
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <h3>
+                            TactiCAL.50
+                        </h3>
+                        <p>
+                        <ul>
+                            <li>regla 1: microfono siempre encendido</li>
+                            <li>regla 2: respetar loot</li>
+                            <li>regla 3: compartir loot</li>
+                            <li>regla 4: roles definidos</li>
+                            <li>regla 5: jugador activo 2 veces por semana minimo</li>
+                            <li>regla 6: no fuego amigo y seriedad competitiva</li>
+                        </ul>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,8 +174,12 @@
         <p class="bg-primary">©Copyright 2023 de lofi desing. Todos los derechos controvertidos.</p>
     </footer>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

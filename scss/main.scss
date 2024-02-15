@@ -143,13 +143,36 @@ footer {
   }
 }
 
+.h-color-txt-bg{
+  background-color: $petroleo-breakout;
+  color: orange;
+  border-radius: 10px;
+  // box-shadow: 2px 2px 8px 4px rgba(184,68,26,1) ;
+}
+
+.p-color-txt-bg{
+  background-color: $petroleo-breakout;
+}
+
+.cartas-color{
+  background-color: $petroleo-breakout;
+  color: whitesmoke;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2) ;
+}
+
 
 .profile-player {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: $petroleo-breakout;
   padding: 2rem;
+  color: aliceblue;
 
   .cover-photo {
       display: flex;
@@ -179,7 +202,7 @@ footer {
 
   p {
       font-size: 1rem;
-      color: #555;
+      color: white;
   }
 }
 
