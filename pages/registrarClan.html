@@ -13,46 +13,53 @@
 <body>
     <header>
         <div class="title">
-            <h1>CHILE<span> ARENA <span class="bluePrint">BREAKOUT</span></span></h1>
+            <h1>CHILE<span class="title-print-a"> ARENA</span><span class="title-print-b">BREAKOUT</span></h1>
         </div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Registrar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page"
-                                href="../index.html">INICIO</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" href="news.html">NOTICIAS</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="crearClan.html">CREAR CLAN</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="registrarClan.html">REGISTRAR CLAN</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link active" href="guiaPage.html">GUIA DEL JUGADOR</a></li>
-                        <li class="nav-item" class="nav-item"><a class="nav-link disabled"
-                                aria-disabled="true">LOGIN</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">BUSCAR</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
     </header>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex flex-row-reverse">
+                <a class="btn btn-outline-success me-0" type="submit" href="loginJugador.html">LOGIN</a>
+                <a class="btn btn-outline-danger ms-0" type="submit" href="registroJugador.html">REGISTRARSE</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow"
+                            aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="news.html">NOTICIAS</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="crearClan.html">CREAR CLAN</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="registrarClan.html">REGISTRAR CLAN</a>
+                    </li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="registroJugador.html">REGISTRAR JUGADOR</a>
+                    </li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                            href="guiaPage.html">GUIA DEL JUGADOR</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary" type="submit">BUSCAR</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <main>
         <section class="flex-conteiner-welcome">
             <h1>REGISTRO DE <span>TEAM</span></h1>
         </section>
         <section class="flex-conteiner-form">
             <div class="flex-item-form-adj">
-                    <img src="../img/soldier-arena.jpg" alt="banner" class="bannerImg">
-                    <!-- <img src="../img/soldier-arena1.jpg" alt="escudo" class="escudoImg"> -->
+                <img src="../img/soldier-arena.jpg" alt="banner" class="bannerImg">
+                <!-- <img src="../img/soldier-arena1.jpg" alt="escudo" class="escudoImg"> -->
             </div>
             <div class="flex-conteiner-adjuntar-banner">
                 <label for="banner de clan" class="LblBannerClan">Banner de clan</label>
@@ -61,7 +68,7 @@
             <div class="flex-conteiner-adjuntar-escudo">
                 <label for="Logo del Clan" class="LblEscudoClan">Escudo del clan</label>
                 <button class="BtnAdjuntarImg">Adjuntar</button>
-            </div>                    
+            </div>
             <div class="flex-item-form">
                 <h2>Instrucciones</h2>
                 <p>
@@ -112,7 +119,8 @@
         </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
