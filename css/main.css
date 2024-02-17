@@ -76,8 +76,9 @@ footer {
 .title-guia {
   text-align: center;
   align-items: center;
-  /* background-color: black; */
-  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: underline;
+  color: red;
 }
 
 .sub-title {

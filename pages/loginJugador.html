@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/main.css">
-    <title>@CHLArenaBreakout</title>
+    <title>Login Clan/Jugador</title>
 </head>
 
 <body>
@@ -25,9 +25,8 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-row-reverse">
-                <a class="btn btn-outline-success me-0" type="submit" href="loginJugador.html">LOGIN</a>
-                <a class="btn btn-outline-danger ms-0" type="submit"
-                    href="registroJugador.html">REGISTRARSE</a>
+                <a class="btn btn-outline-success me-0 ms-2" type="submit" href="loginJugador.html">LOGIN</a>
+                <a class="btn btn-outline-danger ms-0" type="submit" href="registroJugador.html">REGISTRARSE</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -42,10 +41,8 @@
                             href="pages/registrarClan.html">REGISTRAR CLAN</a>
                     </li>
                     <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
-                            href="../pages/registrarClan.html">REGISTRAR JUGADOR</a>
+                            href="../pages/registroJugador.html">REGISTRAR JUGADOR</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
-                            href="../pages/guiaPage.html">GUIA DEL JUGADOR</a></li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -55,6 +52,32 @@
         </div>
     </nav>
     <main>
+        <div class="container-fluid pt-5 pb-5">
+            <div class="card text-bg-dark m-2">
+                <h2 class="card-header p-2">Login de Clan</h2>
+                <div class="row">
+                    <div class="col-12">
+                        <img src="../img/soldier-arena1.jpg" alt="" class="col-12">
+                    </div>
+                </div>
+
+                <div class="container mt-5">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Nombre de usuario</label>
+                            <input type="text" class="form-control mb-3" id="username"
+                                placeholder="nombre de usuario">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control mb-2" id="password"
+                                placeholder="Ingresa tu contraseña">
+                        </div>
+                        <button class="btn btn-primary mb-3 mb-3" type="submit">Iniciar Sesion</button>
+                    </form>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid pt-5 pb-5">
             <div class="card text-bg-dark m-2">
                 <h2 class="card-header p-2">Login Jugadores</h2>

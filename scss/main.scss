@@ -19,7 +19,6 @@
 
 // modificando variables bootstrap de colores
 
-
 * {
   margin: 0px;
   padding: 0px;
@@ -103,11 +102,16 @@ footer {
   height: 20px;
 }
 
-.title-guia {
+@mixin titulos-control{
   text-align: center;
   align-items: center;
-  /* background-color: black; */
-  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  color: red;
+} 
+
+.title-guia {
+  @include titulos-control;
 }
 
 .sub-title {
