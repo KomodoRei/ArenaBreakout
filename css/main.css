@@ -4,6 +4,10 @@
   padding: 0px;
 }
 
+body {
+  background-color: hsl(188.57, 70%, 7.84%);
+}
+
 main {
   /* background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );  */
   background-image: radial-gradient(rgb(27, 134, 228), black);
@@ -117,21 +121,33 @@ footer {
   background-color: hsl(188.57, 70%, 7.84%);
   color: orange;
   border-radius: 10px;
+  box-shadow: 2px 2px 8px 4px rgb(0, 0, 0);
 }
 
 .p-color-txt-bg {
-  background-color: hsl(188.57, 70%, 7.84%);
+  background-color: hsl(18.87, 74.7%, 32.55%);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px 4px rgb(0, 0, 0);
 }
 
-.cartas-color {
-  background-color: hsl(188.57, 70%, 7.84%);
-  color: whitesmoke;
+.cartas-dimension, .cartas-dimension-red, .cartas-dimension-petroleo {
   border-radius: 10px;
   padding: 15px;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2);
+}
+
+.cartas-dimension-petroleo {
+  background-color: hsl(188.57, 70%, 7.84%);
+  color: whitesmoke;
+}
+
+.cartas-dimension-red {
+  background-color: hsl(354.25, 70.46%, 53.53%);
+  color: black;
 }
 
 .profile-player {

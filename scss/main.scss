@@ -15,6 +15,7 @@
 // imports
 @import "modules/colors";
 @import "partials/grids";
+// @import "/scss/modules/vars";
 
 // modificando variables bootstrap de colores
 
@@ -23,6 +24,10 @@
   margin: 0px;
   padding: 0px;
 
+}
+
+body{
+  background-color: $petroleo-breakout;
 }
 
 main {
@@ -142,27 +147,44 @@ footer {
     height: 120px;
   }
 }
+// ejemplo
+
+@mixin color-textos($colorBg, $colorTxt , $borderR){
+  background-color: $colorBg;
+  color: $colorTxt;
+  border-radius: $borderR;
+}
 
 .h-color-txt-bg{
-  background-color: $petroleo-breakout;
-  color: orange;
-  border-radius: 10px;
-  // box-shadow: 2px 2px 8px 4px rgba(184,68,26,1) ;
+  @include color-textos($petroleo-breakout, orange ,10px );
+  box-shadow: 2px 2px 8px 4px rgb(0, 0, 0) ;
 }
 
 .p-color-txt-bg{
-  background-color: $petroleo-breakout;
+  @include color-textos($orange-breakout,white ,10px );
+  box-shadow: 2px 2px 8px 4px rgb(0, 0, 0) ;
+
 }
 
-.cartas-color{
-  background-color: $petroleo-breakout;
-  color: whitesmoke;
+.cartas-dimension{
   border-radius: 10px;
   padding: 15px;
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 20px;
   box-shadow: 0 100px 100px rgba(0, 0, 0, 0.2) ;
+}
+
+.cartas-dimension-petroleo{
+  @extend .cartas-dimension;
+  background-color: $petroleo-breakout;
+  color: whitesmoke;
+}
+
+.cartas-dimension-red{
+  @extend .cartas-dimension;
+  background-color: $red-youtube;
+  color: black;
 }
 
 
@@ -205,4 +227,45 @@ footer {
       color: white;
   }
 }
+
+
+// for ejemplo
+
+// @for $bucleV from 1 through 4 {
+//   .todos-#{$bucleV} {
+//     background-color: black;
+//     color: red;
+//     height: 20px * $bucleV;
+//   }
+// }
+
+// if ejemplo
+
+// $animal: gato;
+
+// p{
+//   @if $animal == gato {
+//     border-radius: 20px;
+//   }
+
+//   @if 1+1==2 {
+//     background-color: red;
+//   }
+
+//   @if 2+2==4{
+//     color: white;
+//   }
+// }
+
+// each
+
+// $boxColors: black, red, white;
+
+// @each $boxcolor in $boxColors{
+//   .boxApl-#{$boxcolor}{
+//     background-color: $petroleo-breakout;
+//     border-color: $boxcolor;
+//     color: $boxcolor;
+//   }
+// }
 
