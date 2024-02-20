@@ -19,6 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Arena Breakout Social</title>
 </head>
@@ -37,26 +38,28 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-row-reverse">
-                <a class="btn btn-outline-success me-0 ms-2" title="Login" type="submit" href="pages/loginJugador.html">LOGIN</a>
-                <a class="btn btn-outline-danger ms-0" title="Registrate" type="link" href="pages/registroJugador.html">REGISTRARSE</a>
+                <a class="btn btn-outline-success me-0 ms-2 kode-mono-400" title="Login" type="submit"
+                    href="pages/loginJugador.html">LOGIN</a>
+                <a class="btn text-light ms-0 kode-mono-400" title="Registrate" type="link"
+                    href="pages/registroJugador.html">REGISTRARSE</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow"
+                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow kode-mono-400"
                             title="inicio" aria-current="page" href="index.html">INICIO</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a class="nav-link active"
                             href="pages/news.html">NOTICIAS</a></li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a class="nav-link active"
                             href="pages/registrarClan.html">REGISTRAR CLAN</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a class="nav-link active"
                             href="pages/registrarClan.html">REGISTRAR JUGADOR</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">BUSCAR</button>
+                    <input class="form-control me-2 kode-mono-400" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-primary kode-mono-400" type="submit">BUSCAR</button>
                 </form>
             </div>
         </div>
@@ -67,20 +70,47 @@
                 <div class="card-header text-bg-dark">
                     <ul class="nav nav-pills card-header-pills">
                         <li class="nav-item">
-                            <a class="btn btn-danger" href="#">Mejor Clip</a>
+                            <a class="btn btn-danger kode-mono-400 text-uppercase" href="#">Mejor Clip</a>
                         </li>
                     </ul>
                 </div>
                 <div class="card-body">
-                    <iframe width="100%" height="490"
+                    <iframe width="100%" height="320"
                         src="https://www.youtube.com/embed/5EYBtpJCovY?si=ngHPBa8A_zO6RZrZ" title="YouTube video player"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
-                    <h2 class="card-title">El mejor jugador de la semana</h2>
-                    <h3 class="text-bg-dark text-warning">Arena Breakout</h3>
-                    <p class="card-text">Compartiendo el mejor clip de la semana</p>
-                    <a href="#" class="btn btn-danger" title="Canal">Canal de Youtube</a>
+                    <h2 class="card-title kode-mono-400 text-uppercase">El mejor jugador de la semana</h2>
+                    <h2 class="text-bg-dark text-warning font-monospace text-uppercase">Arena Breakout</h2>
+                    <p class="card-text kode-mono-400">Compartiendo el mejor clip de la semana</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-danger bi bi-youtube" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Canal de YouTube
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered ps-3 pe-3">
+                            <div class="modal-content opacity-75">
+                                <div class="modal-header bg-dark">
+                                    <h2 class="modal-title text-danger fs-4 bi bi-youtube" id="exampleModalLabel"> Canal
+                                        - Mejor Jugador</h2>
+                                    <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body fs-3 text-dark">
+                                    <p>¿Desea abrir el canal de YouTube del Mejor Jugador?</p>
+                                </div>
+                                <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-outline-white text-white"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-danger bi bi-youtube"> Ir a YouTube</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,18 +123,18 @@
             <div class="profile-photo">
                 <img src="img/soldier-arena.jpg" alt="Foto de perfil">
             </div>
-            <h2>ByxRabbit</h2>
-            <p>Jugador del Mes</p>
+            <h3 class="kode-mono-400">Jugador del Mes</h3>
+            <p class="kode-mono-400">ByxRabbit</p>
         </div>
-        <h2 class="card-header text-center cartas-dimension-petroleo">Informacion del Jugador</h2>
+        <h4 class="card-header text-center fire-bg p-3 kode-mono-400">Informacion del Jugador</h4>
         <div class="accordion accordion-flush p-3" id="accordionFlushExample">
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h4 class="accordion-header">
                     <button class="accordion-button collapsed h-color-txt-bg" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         El Jugador ByxRabbit
                     </button>
-                </h2>
+                </h4>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">
                         <p>
@@ -117,12 +147,12 @@
                 </div>
             </div>
             <div class="accordion-item">
-                <h2 class="accordion-header">
+                <h4 class="accordion-header">
                     <button class="accordion-button collapsed h-color-txt-bg" type="button" data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                         Pais
                     </button>
-                </h2>
+                </h4>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                     <div class="accordion-body">Chile</div>
                 </div>
@@ -167,8 +197,8 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p class="bg-primary">©Copyright 2023 de lofi desing. Todos los derechos controvertidos.</p>
+    <footer class="card-footer text-white">
+        <p>KomodoRei Design</p>
     </footer>
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

@@ -11,10 +11,11 @@
 //   }
 // }
 
-
+// @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 // imports
 @import "modules/colors";
 @import "partials/grids";
+@import "partials/fonts";
 // @import "/scss/modules/vars";
 
 // modificando variables bootstrap de colores
@@ -34,6 +35,14 @@ main {
   background-image: $blue-main-radial-gradient;
 }
 
+@mixin fire-backgorund{
+  border-radius: 3px;
+  padding: 5px 20px 5px 20px;
+  margin-top: 10px 10px;
+  background-image: $gold-bg-color;
+  box-shadow: 0px 28px 33px -4px rgba(0,0,0,0.75);
+  color: black;
+}
 
 .title {
   display: grid;
@@ -102,6 +111,7 @@ footer {
   height: 20px;
 }
 
+
 @mixin titulos-control{
   text-align: center;
   align-items: center;
@@ -113,6 +123,7 @@ footer {
 .title-guia {
   @include titulos-control;
 }
+
 
 .sub-title {
   text-align: center;
@@ -160,7 +171,7 @@ footer {
 }
 
 .h-color-txt-bg{
-  @include color-textos($petroleo-breakout, orange ,10px );
+  @include color-textos($petroleo-breakout, orange ,10px 0px);
   box-shadow: 2px 2px 8px 4px rgb(0, 0, 0) ;
 }
 
@@ -169,7 +180,6 @@ footer {
   box-shadow: 2px 2px 8px 4px rgb(0, 0, 0) ;
 
 }
-
 
 .cartas-dimension{
   border-radius: 10px;
@@ -197,13 +207,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $petroleo-breakout;
+  background-image: $gold-bg-img;
   padding: 2rem;
-  color: aliceblue;
+  border-radius: 10px;
+  background-size: cover;
 
   .cover-photo {
       display: flex;
       margin: 0 0px 0px 0px;
+      
+      img{
+        border-radius: 30px;
+        border-style: solid;
+        color: gold;
+      }
   }
 
   .profile-photo {
@@ -219,16 +236,25 @@ footer {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          border-style: solid;
+          color: gold;
       }
   }
 
-  h1 {
-      font-size: 1.5rem;
-      margin: 1rem 0;
+  h3 {
+    @include fire-backgorund;
   }
 
   p {
       font-size: 1rem;
-      color: white;
+      background-color: black;
+      color: whitesmoke;
+      padding: 3px 20px 3px 20px;
+      border-radius: 10px;
   }
+}
+
+.fire-bg{
+  color: black;
+  @include fire-backgorund;
 }
