@@ -79,6 +79,12 @@ class WelcomeNewUser {
 const welcomeAdmin = new WelcomeNewUser('Javier', 'black', 'Rolling Stones');
 document.getElementById('welcomeMessage').innerHTML = welcomeAdmin.thanks();
 
+let invitado = 'invitado';
+
+document.getElementById('invitado').innerHTML = '<h2>' + invitado + '</h2>';
+
+
+
 
 //lo intente pero no pude
 /* const comentarios = []
