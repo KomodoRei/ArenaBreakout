@@ -32,7 +32,7 @@ body{
 
 main {
   /* background-image: radial-gradient( circle 976px at 51.2% 51%,  rgba(11,27,103,1) 0%, rgba(16,66,157,1) 0%, rgba(11,27,103,1) 17.3%, rgba(11,27,103,1) 58.8%, rgba(11,27,103,1) 71.4%, rgba(16,66,157,1) 100.2%, rgba(187,187,187,1) 100.2% );  */
-  background-image: $blue-main-radial-gradient;
+  background-image: $petroleo-breakout;
 }
 
 @mixin fire-backgorund{
@@ -257,4 +257,33 @@ footer {
 .fire-bg{
   color: black;
   @include fire-backgorund;
+}
+
+.btn-military {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: #4b5320;
+  background-image: linear-gradient(315deg, #4b5320 0%, #292e1e 74%);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-military:hover {
+  background-image: linear-gradient(135deg, #4b5320 0%, #292e1e 74%);
+}
+.fa-shopping-cart {
+  color: white;
+}
+@media (max-width: 600px) {
+  .btn-military {
+    width: 50px;
+    height: 50px;
+  }
 }

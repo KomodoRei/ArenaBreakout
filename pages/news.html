@@ -8,7 +8,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/main.css">
-    <title>Noticias</title>
+    <title>NOTICIAS</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
             <h1>CHILE<span class="title-print-a"> ARENA</span><span class="title-print-b">BREAKOUT</span></h1>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-dark bg-opacity-100">
+    <nav class="navbar sticky-top navbar-dark bg-gradient">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -25,27 +25,33 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-row-reverse">
-                <button class="btn btn-success me-0 ms-2" type="submit">LOGIN</button>
-                <button class="btn text-light ms-0" type="submit">REGISTRARSE</button>
+                <a class="btn btn-outline-warning me-0 ms-2 kode-mono-400" title="Login" type="submit"
+                    href="pages/loginJugador.html">LOGIN</a>
+                <a class="btn text-light ms-0 kode-mono-400" title="Registrate" type="link"
+                    href="pages/registroJugador.html">REGISTRARSE</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 bg-dark bg-opacity-75">
-                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow"
-                            aria-current="page" href="../index.html">INICIO</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a
+                            class="nav-link active animate__animated animate__fadeInUp animate__slow kode-mono-400"
+                            title="inicio" aria-current="page" href="../index.html">INICIO</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
-                            href="news.html">NOTICIAS</a>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow text-warning kode-mono-400"><a
+                            class="nav-link active text-warning" href="news.html">NOTICIAS</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="registrarClan.html">REGISTRAR CLAN</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
-                            href="registrarClan.html">REGISTRAR CLAN</a>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="registrarClan.html">REGISTRAR JUGADOR</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow"><a class="nav-link active"
-                            href="registroJugador.html">REGISTRAR JUGADOR</a>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="tienda.html">TIENDA</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-primary" type="submit">BUSCAR</button>
+                    <input class="form-control me-2 kode-mono-400" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-primary kode-mono-400" type="submit">BUSCAR</button>
                 </form>
             </div>
         </div>

@@ -30,7 +30,7 @@
             <h1>CHILE<span class="title-print-a"> ARENA</span><span class="title-print-b">BREAKOUT</span></h1>
         </div>
     </header>
-    <nav class="navbar sticky-top navbar-dark bg-dark">
+    <nav class="navbar sticky-top navbar-dark bg-gradient">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -38,42 +38,45 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="d-flex flex-row-reverse">
-                <a class="btn btn-outline-success me-0 ms-2 kode-mono-400" title="Login" type="submit"
+                <a class="btn btn-outline-warning me-0 ms-2 kode-mono-400" title="Login" type="submit"
                     href="pages/loginJugador.html">LOGIN</a>
                 <a class="btn text-light ms-0 kode-mono-400" title="Registrate" type="link"
                     href="pages/registroJugador.html">REGISTRARSE</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active animate__animated animate__fadeInUp animate__slow kode-mono-400"
+                    <li class="nav-item"><a
+                            class="nav-link active animate__animated animate__fadeInUp animate__slow kode-mono-400 text-warning"
                             title="inicio" aria-current="page" href="index.html">INICIO</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a class="nav-link active"
-                            href="pages/news.html">NOTICIAS</a></li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a class="nav-link active"
-                            href="pages/registrarClan.html">REGISTRAR CLAN</a>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="pages/news.html">NOTICIAS</a></li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="pages/registrarClan.html">REGISTRAR CLAN</a>
                     </li>
-                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a class="nav-link active"
-                            href="pages/registrarClan.html">REGISTRAR JUGADOR</a>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="pages/registrarClan.html">REGISTRAR JUGADOR</a>
+                    </li>
+                    <li class="nav-item animate__animated animate__fadeInUp animate__slow kode-mono-400"><a
+                            class="nav-link active" href="pages/tienda.html">TIENDA</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 kode-mono-400" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2 kode-mono-400" type="search" placeholder="Search"
+                        aria-label="Search">
                     <button class="btn btn-primary kode-mono-400" type="submit">BUSCAR</button>
                 </form>
             </div>
         </div>
     </nav>
     <main>
+        <div id="welcomeMessage">
+            <!-- aqui mensaje de bienvenida -->
+        </div>
         <section>
             <div class="card text-center text-white bg-dark">
-                <div class="card-header text-bg-dark">
-                    <ul class="nav nav-pills card-header-pills">
-                        <li class="nav-item">
-                            <a class="btn btn-danger kode-mono-400 text-uppercase" href="#">Mejor Clip</a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="card-header bg-gradient">
+                            <h2 class="text-warning kode-mono-400 text-uppercase" href="#">Mejor Clip</h2>                </div>
                 <div class="card-body">
                     <iframe width="100%" height="320"
                         src="https://www.youtube.com/embed/5EYBtpJCovY?si=ngHPBa8A_zO6RZrZ" title="YouTube video player"
@@ -117,11 +120,11 @@
         <div class="profile-player">
             <div class="row">
                 <div class="cover-photo col-12">
-                    <img src="img/soldier-arena2.jpg" alt="banner" class="col-12">
+                    <img src="img/soldier-arena3.jpg" alt="banner" class="col-12">
                 </div>
             </div>
             <div class="profile-photo">
-                <img src="img/soldier-arena.jpg" alt="Foto de perfil">
+                <img src="img/soldier-arena2.jpg" alt="Foto de perfil">
             </div>
             <h3 class="kode-mono-400">Jugador del Mes</h3>
             <p class="kode-mono-400">ByxRabbit</p>
@@ -200,7 +203,8 @@
     <footer class="card-footer text-white">
         <p>KomodoRei Design</p>
     </footer>
-    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
